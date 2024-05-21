@@ -2,8 +2,8 @@ name: x86_64
 
 on:
   repository_dispatch:
-#  release:
-#    types: published
+  release:
+    types: published
   push:
     branches:
       - master
@@ -11,8 +11,8 @@ on:
       - 'x86_64/x86_64.config'
   schedule:
     - cron: 0 17 * * *
-  # watch:
-  #   types: started
+   watch:
+     types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
